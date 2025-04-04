@@ -1,0 +1,12 @@
+{
+  "name": "ModelSwitcher",
+  "description": "模型切换器组件，负责在Claude和DeepSeek之间智能切换",
+  "type": "class",
+  "interfaces": ["IModelSwitcher"],
+  "methods": [
+    "checkAvailability(provider: string): Promise<boolean>",
+    "switchModel(provider: string): Promise<boolean>",
+    "getCurrentModel(): string",
+    "generateResponse(prompt: string): Promise<string>"
+  ]
+}

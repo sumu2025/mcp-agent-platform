@@ -1,0 +1,157 @@
+{
+  "project": {
+    "name": "MCP智能体中台 - Obsidian集成",
+    "version": "0.1.0",
+    "description": "实现Claude与Obsidian的无缝集成，提供多级降级架构",
+    "stage": "阶段3.2",
+    "startDate": "2025-04-03",
+    "updateDate": "2025-04-03"
+  },
+  "architecture": {
+    "type": "多级降级",
+    "primaryMode": "Claude桌面应用",
+    "fallbackModes": [
+      {
+        "name": "DeepSeek API",
+        "triggerCondition": "Claude API不可用"
+      },
+      {
+        "name": "本地轻量级模型",
+        "triggerCondition": "完全断网"
+      }
+    ],
+    "components": [
+      {
+        "name": "MCP框架",
+        "description": "核心业务逻辑和控制流",
+        "status": "已有基础，需扩展"
+      },
+      {
+        "name": "Obsidian集成器",
+        "description": "与Obsidian交互的接口",
+        "status": "待开发"
+      },
+      {
+        "name": "模型适配层",
+        "description": "支持多种模型的统一接口",
+        "status": "部分已开发"
+      },
+      {
+        "name": "状态管理器",
+        "description": "监控连接状态并触发降级",
+        "status": "待开发"
+      },
+      {
+        "name": "上下文系统",
+        "description": "管理会话状态和项目上下文",
+        "status": "初步开发中"
+      }
+    ]
+  },
+  "developmentPlan": {
+    "currentPhase": "阶段0：开发基础设施",
+    "startDate": "2025-04-04",
+    "endDate": "2025-04-10",
+    "currentTasks": [
+      {
+        "name": "DeepSeek API快速集成",
+        "status": "进行中",
+        "priority": "高"
+      },
+      {
+        "name": "项目上下文持久化系统",
+        "status": "进行中",
+        "priority": "高"
+      }
+    ],
+    "phases": [
+      {
+        "name": "阶段0：开发基础设施",
+        "startDate": "2025-04-04",
+        "endDate": "2025-04-10",
+        "status": "进行中"
+      },
+      {
+        "name": "阶段1：基础集成",
+        "startDate": "2025-04-11",
+        "endDate": "2025-04-24",
+        "status": "计划中"
+      },
+      {
+        "name": "阶段2：一级降级机制",
+        "startDate": "2025-04-25",
+        "endDate": "2025-05-08",
+        "status": "计划中"
+      },
+      {
+        "name": "阶段3：二级降级和完善",
+        "startDate": "2025-05-09",
+        "endDate": "2025-05-22",
+        "status": "计划中"
+      },
+      {
+        "name": "阶段4：测试与优化",
+        "startDate": "2025-05-23",
+        "endDate": "2025-06-05",
+        "status": "计划中"
+      }
+    ]
+  },
+  "progress": {
+    "overallProgress": "5%",
+    "milestones": [
+      {
+        "name": "M0：开发基础设施就绪",
+        "date": "2025-04-10",
+        "status": "进行中"
+      },
+      {
+        "name": "M1：基础集成完成",
+        "date": "2025-04-24",
+        "status": "计划中"
+      },
+      {
+        "name": "M2：一级降级机制实现",
+        "date": "2025-05-08",
+        "status": "计划中"
+      },
+      {
+        "name": "M3：二级降级与完善",
+        "date": "2025-05-22",
+        "status": "计划中"
+      },
+      {
+        "name": "M4：产品测试与优化完成",
+        "date": "2025-06-05",
+        "status": "计划中"
+      }
+    ],
+    "recentAchievements": [
+      "制定了详细的开发计划和时间线",
+      "确定了多级降级架构方案",
+      "开始实施DeepSeek快速集成"
+    ]
+  },
+  "context": {
+    "decisions": [
+      {
+        "date": "2025-04-03",
+        "topic": "架构选择",
+        "decision": "采用多级降级架构，以Claude桌面应用为主要入口",
+        "rationale": "提供最佳用户体验，同时确保在各种网络条件下的可用性"
+      },
+      {
+        "date": "2025-04-03",
+        "topic": "优先级调整",
+        "decision": "先实施开发资源优化，再开发核心功能",
+        "rationale": "解决开发资源瓶颈将为后续所有工作创造价值"
+      }
+    ],
+    "technicalConstraints": [
+      "Obsidian API基于TypeScript/JavaScript",
+      "需兼容Windows、macOS和Linux平台",
+      "要考虑网络不稳定情况",
+      "确保数据隐私和安全性"
+    ]
+  }
+}

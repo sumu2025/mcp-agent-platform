@@ -1,0 +1,109 @@
+[2025-04-02 18:46:43] [mcp] [INFO] - DeepSeek API客户端初始化完成，使用模型: deepseek-chat
+[2025-04-02 18:46:43] [test_deepseek] [INFO] - 发送提示词: 请用简洁的语言介绍一下Python的特点和优势
+[2025-04-02 18:46:43] [mcp] [ERROR] - DeepSeek API调用失败: DeepSeek API密钥认证失败
+[2025-04-02 18:46:43] [test_deepseek] [ERROR] - 测试失败: DeepSeek API密钥认证失败
+[2025-04-02 18:46:52] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: deepseek
+[2025-04-02 18:46:52] [test_mcp_client] [INFO] - 发送提示词: 请简要解释人工智能和机器学习的区别
+[2025-04-02 18:46:52] [mcp] [INFO] - DeepSeek API客户端初始化完成，使用模型: deepseek-chat
+[2025-04-02 18:46:52] [mcp] [ERROR] - DeepSeek API调用失败: DeepSeek API密钥认证失败
+[2025-04-02 18:46:52] [test_mcp_client] [ERROR] - 测试失败: DeepSeek API密钥认证失败
+[2025-04-02 18:47:34] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: deepseek
+[2025-04-02 18:47:34] [mcp] [INFO] - DeepSeek API客户端初始化完成，使用模型: deepseek-chat
+[2025-04-02 18:47:34] [mcp] [ERROR] - DeepSeek API调用失败: DeepSeek API密钥认证失败
+[2025-04-02 18:55:48] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 18:55:48] [test_mock] [INFO] - 发送提示词: 请用简洁的语言介绍一下Python的特点和优势
+[2025-04-02 18:55:48] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 18:55:48] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=500, temperature=0.7
+[2025-04-02 18:55:49] [test_mock] [INFO] - 生成成功!
+[2025-04-02 18:56:06] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 18:56:06] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 18:56:06] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=1000, temperature=0.7
+[2025-04-02 18:56:23] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: deepseek
+[2025-04-02 18:56:23] [mcp] [INFO] - DeepSeek API客户端初始化完成，使用模型: deepseek-chat
+[2025-04-02 18:59:52] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 18:59:52] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 18:59:52] [mcp] [INFO] - 模拟API调用: prompt=您的提示词..., max_tokens=1000, temperature=0.7
+[2025-04-02 19:00:17] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: deepseek
+[2025-04-02 19:00:17] [mcp] [INFO] - DeepSeek API客户端初始化完成，使用模型: deepseek-chat
+[2025-04-02 19:01:10] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 19:01:10] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 19:01:10] [mcp] [INFO] - 模拟API调用: prompt=您的提示词..., max_tokens=2000, temperature=0.8
+[2025-04-02 19:12:25] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:12:25] [test_cache] [INFO] - ==================================================
+[2025-04-02 19:12:25] [test_cache] [INFO] - 测试1: 基本缓存功能
+[2025-04-02 19:12:25] [test_cache] [INFO] - 缓存已清空
+[2025-04-02 19:12:25] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 19:12:25] [test_cache] [INFO] - 创建模拟客户端
+[2025-04-02 19:12:25] [test_cache] [INFO] - 发送第一次请求: 请用简洁的语言介绍一下Python的特点和优势
+[2025-04-02 19:12:25] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 19:12:25] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=500, temperature=0.7
+[2025-04-02 19:12:26] [test_cache] [INFO] - 第一次请求完成，用时: 1.008秒
+[2025-04-02 19:12:26] [test_cache] [INFO] - 发送第二次请求（相同参数）: 请用简洁的语言介绍一下Python的特点和优势
+[2025-04-02 19:12:26] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=500, temperature=0.7
+[2025-04-02 19:12:26] [test_cache] [INFO] - 第二次请求完成，用时: 0.000秒
+[2025-04-02 19:12:26] [test_cache] [INFO] - 两次响应内容一致，缓存工作正常
+[2025-04-02 19:12:26] [test_cache] [INFO] - 缓存命中使响应速度提高了2944.9倍
+[2025-04-02 19:12:26] [test_cache] [INFO] - 内存缓存命中率: 50.00%
+[2025-04-02 19:12:26] [test_cache] [INFO] - 磁盘缓存命中率: 0.00%
+[2025-04-02 19:12:26] [test_cache] [INFO] - ==================================================
+[2025-04-02 19:12:26] [test_cache] [INFO] - 测试2: 不同参数的缓存效果
+[2025-04-02 19:12:26] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 19:12:26] [test_cache] [INFO] - 测试不同参数的缓存效果
+[2025-04-02 19:12:26] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 19:12:26] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=1000, temperature=0.7
+[2025-04-02 19:12:27] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=1000, temperature=0.8
+[2025-04-02 19:12:28] [test_cache] [WARNING] - 使用不同温度参数时，响应应该不同，但实际相同
+[2025-04-02 19:12:28] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=100, temperature=0.7
+[2025-04-02 19:12:29] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=1000, temperature=0.7
+[2025-04-02 19:12:29] [test_cache] [WARNING] - 使用不同max_tokens参数时，响应应该不同，但实际相同
+[2025-04-02 19:12:29] [test_cache] [INFO] - 缓存的键: ['mock:e761c9bcb33bf2e5475a4ee30bede36b', 'mock:038cdd80dddca191cfa330364f66406a', 'mock:ead751d9cf2d336eb63d9f0c5d2e89ab', 'mock:54af0b9976df02bb2e1a0b3ff2fa9576']
+[2025-04-02 19:12:43] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:12:56] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:13:08] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:13:08] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 19:13:08] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 19:13:08] [mcp] [INFO] - 模拟API调用: prompt=测试缓存功能..., max_tokens=1000, temperature=0.7
+[2025-04-02 19:13:29] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:13:29] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 19:13:29] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 19:13:29] [mcp] [INFO] - 模拟API调用: prompt=测试缓存功能..., max_tokens=1000, temperature=0.7
+[2025-04-02 19:14:16] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:14:16] [test_cache] [INFO] - ==================================================
+[2025-04-02 19:14:16] [test_cache] [INFO] - 测试1: 基本缓存功能
+[2025-04-02 19:14:16] [test_cache] [INFO] - 缓存已清空
+[2025-04-02 19:14:16] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 19:14:16] [test_cache] [INFO] - 创建模拟客户端
+[2025-04-02 19:14:16] [test_cache] [INFO] - 发送第一次请求: 请用简洁的语言介绍一下Python的特点和优势
+[2025-04-02 19:14:16] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 19:14:16] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=500, temperature=0.7
+[2025-04-02 19:14:17] [test_cache] [INFO] - 第一次请求完成，用时: 1.007秒
+[2025-04-02 19:14:17] [test_cache] [INFO] - 发送第二次请求（相同参数）: 请用简洁的语言介绍一下Python的特点和优势
+[2025-04-02 19:14:17] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=500, temperature=0.7
+[2025-04-02 19:14:17] [test_cache] [INFO] - 第二次请求完成，用时: 0.000秒
+[2025-04-02 19:14:17] [test_cache] [INFO] - 两次响应内容一致，缓存工作正常
+[2025-04-02 19:14:17] [test_cache] [INFO] - 缓存命中使响应速度提高了2427.8倍
+[2025-04-02 19:14:17] [test_cache] [INFO] - 内存缓存命中率: 50.00%
+[2025-04-02 19:14:17] [test_cache] [INFO] - 磁盘缓存命中率: 0.00%
+[2025-04-02 19:14:17] [test_cache] [INFO] - ==================================================
+[2025-04-02 19:14:17] [test_cache] [INFO] - 测试2: 不同参数的缓存效果
+[2025-04-02 19:14:17] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 19:14:17] [test_cache] [INFO] - 测试不同参数的缓存效果
+[2025-04-02 19:14:17] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 19:14:17] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=1000, temperature=0.7
+[2025-04-02 19:14:18] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=1000, temperature=0.8
+[2025-04-02 19:14:19] [test_cache] [WARNING] - 使用不同温度参数时，响应应该不同，但实际相同
+[2025-04-02 19:14:19] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=100, temperature=0.7
+[2025-04-02 19:14:20] [mcp] [INFO] - 模拟API调用: prompt=请用简洁的语言介绍一下Python的特点和优势..., max_tokens=1000, temperature=0.7
+[2025-04-02 19:14:20] [test_cache] [WARNING] - 使用不同max_tokens参数时，响应应该不同，但实际相同
+[2025-04-02 19:14:20] [test_cache] [INFO] - 缓存的键: ['mock:e761c9bcb33bf2e5475a4ee30bede36b', 'mock:038cdd80dddca191cfa330364f66406a', 'mock:ead751d9cf2d336eb63d9f0c5d2e89ab', 'mock:54af0b9976df02bb2e1a0b3ff2fa9576']
+[2025-04-02 19:14:29] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:14:36] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:14:43] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:14:51] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:14:51] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 19:14:51] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 19:14:51] [mcp] [INFO] - 模拟API调用: prompt=请介绍Python语言的特点..., max_tokens=1000, temperature=0.7
+[2025-04-02 19:15:00] [mcp] [INFO] - 缓存系统初始化完成，启用状态: True
+[2025-04-02 19:15:00] [mcp] [INFO] - MCP客户端初始化完成，默认模型提供商: mock
+[2025-04-02 19:15:00] [mcp] [INFO] - 模拟API客户端初始化完成，使用模型: mock-model
+[2025-04-02 19:15:00] [mcp] [INFO] - 模拟API调用: prompt=请介绍Python语言的特点..., max_tokens=1000, temperature=0.7

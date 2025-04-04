@@ -1,0 +1,105 @@
+Metadata-Version: 2.4
+Name: mcp-agent-platform
+Version: 0.1.0
+Summary: MCP智能体中台 - 统一的AI模型调用与智能体管理平台
+Author-email: MCP Project <your-email@example.com>
+License-Expression: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.28.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: typer>=0.9.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: rich>=13.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+
+# MCP智能体中台
+
+统一的AI模型调用与智能体管理平台，支持Claude和DeepSeek等大型语言模型的无缝集成与协作。
+
+## 项目概述
+
+MCP(Model Context Protocol)智能体中台项目旨在创建一个统一的平台，使Python初级开发者能够构建和管理复杂的AI应用，实现从简单API调用到复杂多智能体协作的渐进式发展。
+
+## 主要功能
+
+- 统一的API调用接口(Claude和DeepSeek)
+- 智能模型路由和选择系统
+- Obsidian知识库集成的RAG系统
+- The intelligent model routing and selection system
+- Obsidian knowledge base integration with RAG capabilities
+- Single agent framework
+- Multi-agent collaboration system
+- Self-diagnosis and optimization mechanisms
+
+## 安装指南
+
+### 前置条件
+
+- Python 3.10+
+- pip (最新版本)
+
+### 安装步骤
+
+1. 克隆仓库：
+   ```
+   git clone https://github.com/yourusername/mcp-agent-platform.git
+   cd mcp-agent-platform
+   ```
+
+2. 创建并激活虚拟环境：
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. 安装依赖：
+   ```
+   pip install -e .
+   ```
+
+4. 配置API密钥：
+   ```
+   cp .env.example .env
+   # 编辑.env文件，添加你的API密钥
+   ```
+
+## 快速开始
+
+基本使用示例：
+
+```python
+from mcp.api.client import MCPClient
+
+# 初始化客户端
+client = MCPClient()
+
+# 生成文本
+response = client.generate("帮我解释一下量子计算的基本原理")
+print(response)
+```
+
+使用命令行工具：
+
+```bash
+mcp generate "帮我解释一下量子计算的基本原理"
+```
+
+## 文档
+
+更详细的文档可以在`docs`目录中找到。
+
+## 开发状态
+
+当前项目处于阶段1开发中：构建基础API集成层。
+
+## 许可证
+
+MIT
+
+## 贡献指南
+
+欢迎贡献代码和提出问题。请参阅`CONTRIBUTING.md`了解详情。

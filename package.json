@@ -1,0 +1,26 @@
+{
+  "name": "mcp-agent-platform",
+  "version": "0.1.0",
+  "description": "MCP智能体中台 - Obsidian集成",
+  "main": "index.js",
+  "bin": {
+    "mcp-dev-assist": "./bin/mcp-dev-assist.js",
+    "mcp-code-gen": "./bin/mcp-code-gen.js"
+  },
+  "scripts": {
+    "dev-assist": "node ./bin/mcp-dev-assist.js",
+    "code-gen": "node ./bin/mcp-code-gen.js",
+    "context-demo": "node ./examples/context_demo.js",
+    "test": "jest"
+  },
+  "author": "MCP Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

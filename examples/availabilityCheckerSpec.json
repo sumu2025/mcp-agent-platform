@@ -1,0 +1,12 @@
+{
+  "name": "ModelAvailabilityChecker",
+  "description": "检测不同AI模型的可用性状态",
+  "type": "class",
+  "methods": [
+    "checkClaudeAvailability(): Promise<boolean>",
+    "checkDeepSeekAvailability(): Promise<boolean>",
+    "getAvailableModels(): Promise<string[]>",
+    "monitorAvailability(intervalMs: number): void",
+    "stopMonitoring(): void"
+  ]
+}

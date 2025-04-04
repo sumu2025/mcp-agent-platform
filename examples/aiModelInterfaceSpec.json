@@ -1,0 +1,9 @@
+{
+  "name": "AIModelInterface",
+  "description": "AI模型通用接口，定义Claude和DeepSeek需要实现的方法",
+  "type": "interface",
+  "methods": [
+    "generateText(prompt: string, options?: any): Promise<string>",
+    "checkAvailability(): Promise<boolean>"
+  ]
+}

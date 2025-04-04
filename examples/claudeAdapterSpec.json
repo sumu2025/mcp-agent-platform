@@ -1,0 +1,10 @@
+{
+  "name": "ClaudeModelAdapter",
+  "description": "Claude API适配器，实现ModelInterface接口",
+  "type": "class",
+  "methods": [
+    "constructor(apiKey: string)",
+    "generateText(prompt: string, options?: any): Promise<string>",
+    "checkAvailability(): Promise<boolean>"
+  ]
+}

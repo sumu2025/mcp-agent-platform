@@ -1,0 +1,13 @@
+{
+  "name": "FallbackDemo",
+  "description": "降级机制演示程序",
+  "type": "class",
+  "methods": [
+    "setup(): Promise<void>",
+    "runWithClaudeOnly(): Promise<string>",
+    "runWithFallback(): Promise<string>",
+    "simulateClaudeFailure(): void",
+    "resetSimulation(): void",
+    "demo(): Promise<void>"
+  ]
+}

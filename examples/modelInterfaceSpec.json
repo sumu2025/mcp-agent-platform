@@ -1,0 +1,9 @@
+{
+  "name": "ModelInterface",
+  "description": "模型接口的具体实现",
+  "type": "interface",
+  "methods": [
+    "generateText(prompt: string, options?: any): Promise<string>",
+    "checkAvailability(): Promise<boolean>"
+  ]
+}

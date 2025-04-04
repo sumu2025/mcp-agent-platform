@@ -1,0 +1,13 @@
+{
+  "name": "UnifiedModelManager",
+  "description": "统一管理多个模型，并实现自动降级",
+  "type": "class",
+  "methods": [
+    "registerModel(key: string, model: any): void",
+    "setPriority(keys: string[]): void",
+    "generateText(prompt: string, options?: any): Promise<string>",
+    "generateStructured<T>(prompt: string, schema: any): Promise<T>",
+    "getCurrentModel(): string",
+    "enableAutoFallback(enabled: boolean): void"
+  ]
+}

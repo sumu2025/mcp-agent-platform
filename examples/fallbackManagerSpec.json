@@ -1,0 +1,11 @@
+{
+  "name": "FallbackManager",
+  "description": "模型降级管理器，处理自动降级逻辑",
+  "type": "class",
+  "methods": [
+    "registerModel(name: string, model: any, priority: number): void",
+    "generateText(prompt: string, options?: any): Promise<string>",
+    "enableAutoFallback(enabled: boolean): void",
+    "getCurrentModelName(): string"
+  ]
+}

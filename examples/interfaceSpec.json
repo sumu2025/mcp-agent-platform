@@ -1,0 +1,10 @@
+{
+  "name": "UnifiedModelInterface",
+  "description": "统一模型接口，为所有AI模型提供一致的访问方式",
+  "type": "interface",
+  "methods": [
+    "generateText(prompt: string, options?: GenerateOptions): Promise<string>",
+    "generateStructured<T>(prompt: string, schema: any): Promise<T>",
+    "checkAvailability(): Promise<boolean>"
+  ]
+}

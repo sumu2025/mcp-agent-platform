@@ -1,0 +1,13 @@
+{
+  "name": "ModelFallbackDemo",
+  "description": "演示Claude和DeepSeek之间的自动降级",
+  "type": "class",
+  "methods": [
+    "constructor(claudeApiKey: string, deepSeekApiKey: string)",
+    "setupModels(): void",
+    "askQuestion(question: string): Promise<string>",
+    "simulateClaudeFailure(): void",
+    "resetSimulation(): void",
+    "runDemo(): Promise<void>"
+  ]
+}

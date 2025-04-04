@@ -1,0 +1,44 @@
+{
+  "name": "ClaudeToDeepSeekAdapter",
+  "sourceName": "Claude",
+  "targetName": "DeepSeek",
+  "sourceInterface": {
+    "generateText": {
+      "parameters": {
+        "prompt": "string",
+        "maxTokens": "number",
+        "temperature": "number",
+        "topP": "number",
+        "stopSequences": "string[]"
+      },
+      "returns": "Promise<string>"
+    },
+    "generateStructured": {
+      "parameters": {
+        "prompt": "string",
+        "responseFormat": "object",
+        "maxTokens": "number"
+      },
+      "returns": "Promise<any>"
+    }
+  },
+  "targetInterface": {
+    "generateText": {
+      "parameters": {
+        "prompt": "string",
+        "options": {
+          "max_tokens": "number",
+          "temperature": "number"
+        }
+      },
+      "returns": "Promise<string>"
+    },
+    "generateStructured": {
+      "parameters": {
+        "prompt": "string",
+        "options": "object"
+      },
+      "returns": "Promise<any>"
+    }
+  }
+}
