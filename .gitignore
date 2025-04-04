@@ -1,3 +1,20 @@
+# 虚拟环境
 venv/
+.venv/
+
+# Python缓存文件
 __pycache__/
-*.pyc
+*.py[cod]
+*.class
+
+# 系统文件
+.DS_Store
+.idea/
+.vscode/
+
+# 环境变量
+.env
+
+# 其他常见忽略
+*.log
+*.swp
